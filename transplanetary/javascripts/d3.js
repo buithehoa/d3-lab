@@ -6,7 +6,7 @@ var width = 600,
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
-  .append("g")
+    .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height * .52 + ")");
 
 var partition = d3.layout.partition()
@@ -32,6 +32,17 @@ d3.json("flare.json", function(error, root) {
       .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
       .style("fill-rule", "evenodd")
       .each(stash);
+
+  var image = svg.selectAll("image").data(partition.nodes);
+  var imageEnter = image.enter().append("image")
+    .attr("xlink:href", "https://github.com/favicon.ico")
+    .attr("width", 16)
+    .attr("height", 16)
+    .attr("x", function (d) {
+      return 0; // calculate x
+    }).attr("y", function (d) {
+      return 0; // calculate y
+    });
 
   d3.selectAll("input").on("change", function change() {
     var value = this.value === "count"
