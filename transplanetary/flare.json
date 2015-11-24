@@ -1,0 +1,99 @@
+{
+  "name": "flare",
+  "children": [
+    {
+      "name": "analytics",
+      "children": [
+        {
+          "name": "optimization",
+          "children": [
+            {
+              "name": "AspectRatioBanker",
+              "children": [
+                {
+                  "name": "X",
+                  "children": [
+                    {
+                      "name": "Y",
+                      "size": 7074
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "animate",
+      "children": [
+        {
+          "name": "Easing",
+          "size": 17010
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "children": [
+        {
+          "name": "converters",
+          "children": [
+            {
+              "name": "Converters",
+              "children": [
+                {
+                  "name": "Name",
+                  "size": 9500
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "children": [
+        {
+          "name": "optimization",
+          "children": [
+            {
+              "name": "AspectRatioBanker",
+              "children": [
+                {
+                  "name": "X",
+                  "children": [
+                    {
+                      "name": "",
+                      "size": 15000
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "children": [
+        {
+          "name": "converters",
+          "children": [
+            {
+              "name": "Converters",
+              "size": 7652
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "display",
+      "size": 8745
+    }
+  ]
+}
