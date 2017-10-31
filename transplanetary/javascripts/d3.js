@@ -35,13 +35,13 @@ d3.json("flare.json", function(error, root) {
 
   var image = svg.selectAll("image").data(partition.nodes);
   var imageEnter = image.enter().append("image")
-    .attr("xlink:href", "https://github.com/favicon.ico")
-    .attr("width", 16)
-    .attr("height", 16)
+    .attr("xlink:href", "images/earth.png")
+    .attr("width", 160)
+    .attr("height", 160)
     .attr("x", function (d) {
-      return 0; // calculate x
+      return -80; // calculate x
     }).attr("y", function (d) {
-      return 0; // calculate y
+      return -80; // calculate y
     });
 
   d3.selectAll("input").on("change", function change() {
